@@ -1,0 +1,61 @@
+/* CSS Reset and Basic Styling */
+html, body, footer, h1, ul, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Create a flex container for the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container spans the full viewport height */
+}
+
+/* Add flexGrow to the main content area to push the footer to the bottom */
+main {
+    flex-grow: 1;
+}
+
+/* Basic styling for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Reduce the margin for smaller screens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Basic styling for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+	border: 2px solid red;
+	padding: 20px;
+}
